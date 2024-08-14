@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<header class="p-3 text-bg-dark">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start" style="">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img th:src="@{/static/img/logo.png}" alt="" class="bi me-2" width="40" height="32" aria-label="Bootstrap" src="">
+            </a>
+            <span class="nav-link px-2 pe-4 text-white">Transportes Califort</span>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#sistema" class="nav-link px-2 text-white">Servicios</a></li>
+                <li><a href="#featured-3" class="nav-link px-2 text-white">Equipo</a></li>
+                <li><a href="#footer" class="nav-link px-2 text-white">Creditos</a></li>
+            </ul>
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">
+                    <a href="/login" class="link text-black ">Login</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img th:src="@{/img/bus.webp}" class="d-block mx-lg-auto img-fluid rounded shadow" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Servicios excelentes a nuestros clientes</h1>
+            <p class="lead">Nuestro servicio de autobuses ofrece viajes de primera clase con comodidad, puntualidad y atención excepcional. Con modernas flotas, asientos cómodos y atención al cliente de primera, garantizamos una experiencia de viaje sin igual</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Mas Info</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modelos de Buses</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Nuestra flota de autobuses está compuesta por vehículos de última generación, equipados con las últimas tecnologías para garantizar un viaje cómodo y seguro. Desde su diseño moderno hasta sus características avanzadas, como asientos ergonómicos, sistemas de entretenimiento a bordo y conexión Wi-Fi de alta velocidad, nuestros autobuses ofrecen una experiencia de viaje de primer nivel que supera las expectativas de nuestros pasajeros
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="my-5" id="sistema">
+    <div class="p-5 text-center bg-body-secondary">
+        <div class="container py-5">
+            <h1 class="text-body-emphasis">Un sistema Moderno para uso del Cliente</h1>
+            <p class="col-lg-8 mx-auto lead">
+                El sistema precisa de llamativas interfaces donde la usabilidad sea intuitiva y el diseño sea atractivo visualmente. Estas interfaces deben permitir registrar fácilmente a los trabajadores, asignarles nuevos cargos, marcar su asistencia de manera sencilla y crear departamentos de trabajo de forma eficiente. Además, deben incluir funcionalidades para revisar y responder solicitudes diversas, como solicitudes médicas, de ausencia, reclamos u otros, facilitando la gestión de recursos humanos de manera integral y eficaz. Es esencial que todas estas características estén integradas de manera cohesiva en el diseño de las interfaces, proporcionando una experiencia de usuario completa y satisfactoria.
+            </p>
+            <br>
+            <img th:src="@{/img/bus-interno.webp}" class="d-block mx-lg-auto img-fluid rounded shadow" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+    </div>
+</div>
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Valores</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+            <h3 class="fs-3 text-body-emphasis">Integridad</h3>
+            <div>
+                <hr class="border-2">
+            </div>
+            <img th:src="@{/img/codigo1.jpg}" class="d-block mx-lg-auto img-fluid rounded shadow" alt="Bootstrap Themes" width="300" height="200" loading="lazy">
+            <br>
+            <p> La integridad es el fundamento de la confianza en cualquier relación, ya sea con clientes, empleados o socios. Una empresa que valora la integridad se compromete a actuar con honestidad y transparencia, manteniendo siempre la ética en sus decisiones y acciones. Esto incluye cumplir con promesas, admitir errores y ser consistente en la comunicación y el comportamiento.</p>
+        </div>
+        <div class="feature col">
+            <h3 class="fs-3 text-body-emphasis">Innovación</h3>
+            <div>
+                <hr class="border-2">
+            </div>
+            <img th:src="@{/img/codigo2.jpg}" class="d-block mx-lg-auto img-fluid rounded shadow" alt="Bootstrap Themes" width="300" height="200" loading="lazy">
+            <br>
+            <p>La innovación es esencial para el crecimiento y la sostenibilidad en un mercado competitivo. Una empresa que valora la innovación fomenta la creatividad y la búsqueda constante de nuevas ideas, productos y procesos. Esto implica no solo estar al tanto de las tendencias y tecnologías emergentes, sino también crear un entorno donde los empleados se sientan seguros para experimentar y proponer soluciones novedosas.</p>
+        </div>
+        <div class="feature col">
+            <h3 class="fs-3 text-body-emphasis">Excelencia en el Servicio</h3>
+            <div>
+                <hr class="border-2">
+            </div>
+            <img th:src="@{/img/codigo3.png}" class="d-block mx-lg-auto img-fluid rounded shadow" alt="Bootstrap Themes" width="300" height="200" loading="lazy">
+            <br>
+            <p>La excelencia en el servicio al cliente implica poner las necesidades y expectativas de los clientes en el centro de todas las operaciones. Una empresa que valora este principio se esfuerza por proporcionar una experiencia superior, desde la calidad del producto hasta la atención postventa. Esto incluye escuchar activamente a los clientes, responder rápidamente a sus inquietudes y esforzarse continuamente por superar sus expectativas.</p>
+        </div>
+    </div>
+</div>
+<div class="bg-dark">
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top" id="footer">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <img th:src="@{/img/logo.png}" src="" alt="" class="bi me-2" width="40" height="32" aria-label="Bootstrap">
+                </a>
+                <span class="mb-3 mb-md-0 text-light">Transportes Califort</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end colorText">
+                <li class="nav-item"><span class="nav-link px-2 mb-3 mb-md-0 text-light">©Todos los derechos del proyectos Reservados</span></li>
+            </ul>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

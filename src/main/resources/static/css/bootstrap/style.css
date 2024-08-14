@@ -1,0 +1,22 @@
+        body {
+            font-family: Monserrat, sans-serif;
+            overflow-x: hidden;
+        }
+        #menu a{
+            font-size:20px;
+            color: #FFFFFF;
+        }
+        #menu2 {
+            padding-left:70px;
+            padding-right:70px;
+        }
+        .navbar {
+            padding: 0;
+        }
+        .carousel-inner{
+            max-height:39rem;
+        }
+        .scrolling-text {
+            position: sticky;
+            top: 0;
+        }
